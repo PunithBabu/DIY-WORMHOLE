@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".ClickPostActivity">
+
+
+    <include
+    android:id="@+id/activity_click_toolbar"
+    layout="@layout/app_bar_layout">
+
+</include>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/post_title_onclick5656"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLength="100"
+                    android:text="Sample sample"
+                    android:maxLines="3"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+                <ImageView
+                    android:id="@+id/onclick_post_image5656"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/greybox" />
+
+
+                <com.borjabravo.readmoretextview.ReadMoreTextView
+                    android:id="@+id/post_description_onclick5656"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="afafacafacaafafacafacacacqafafafafafaffafdfaafafafaaffafafafafafaefw sg sg g sgsg sg f g sg g zfgs zg zg  sg sg sg sgsgsg t34tw sg34tg3geg t amioj89 af a  af af f af af aa  a af a fasf 3hr8ah8jf afa r raf afafaf83caehfaofhaufhafaafafaasga afafafafafafafafaf100cacqafafafafafafamioj89 af a  af af f af af aa  a af a fasf 3hr8ah8jf afa r raf afafaf83caehfaofhaufhafaafafaasga afafafafafafafafaf100"
+                    android:textColor="#C6C4C4"
+                    android:textSize="15dp"
+                    app:colorClickableText="@color/white"
+                    app:trimCollapsedText="Show less"
+                    app:trimExpandedText="Read more"
+                    app:trimLength="250"
+                    app:trimMode="trimModeLength" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/delete_post_btn5656"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/greenoutbtn"
+                            android:text="Delete Post"
+                            android:textColor="@color/purple_500" />
+
+                        <Button
+                            android:id="@+id/edit_post_btn5656"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/greenoutbtn"
+                            android:text="Edit Post"
+                            android:textColor="@color/purple_500" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+

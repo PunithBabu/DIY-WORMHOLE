@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".search_activity">
+
+    <include
+        android:id="@+id/search_activity_click_toolbar"
+        layout="@layout/app_bar_layout">
+
+    </include>
+
+    <EditText
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColorHint="#959595"
+        android:hint="\t Search for Profile / Ideas"
+        android:background="@drawable/searchoutline"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="268dp"
+        android:alpha="0.2"
+        android:foregroundGravity="center"
+        android:src="@drawable/searchonicon" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        app:itemIconTint="@color/bottomnavcolurpallette"
+        app:itemRippleColor="@color/black"
+        app:menu="@menu/navigation_items_bottom" />
+
+</RelativeLayout>

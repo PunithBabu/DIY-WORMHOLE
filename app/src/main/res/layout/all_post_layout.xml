@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:layout_height="wrap_content"
+    >
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/user_profile_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/profileicon"
+                app:civ_border_color="@color/purple_500"
+                app:civ_border_width="1dp" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/user_name_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:maxLength="20"
+                        android:text="Elon Musk"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/profile_verified_badge"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/verified_badge_icon" />
+
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/rounddot" />
+
+                    <TextView
+                        android:id="@+id/date_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="00-00-0000"
+                        android:textColor="@color/grey"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/time_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="00-00"
+                        android:textColor="@color/grey"
+                        android:textSize="10dp" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/post_title_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:text="TESLA COIL AC TRANFORMER"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/main_post_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/greybox" />
+
+            </LinearLayout>
+
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/post_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="afafacafacaafafacafacacacqafafafafafaffafdfaafafafaaffafafafafafaefw sg sg g sgsg sg f g sg g zfgs zg zg  sg sg sg sgsgsg t34tw sg34tg3geg t amioj89 af a  af af f af af aa  a af a fasf 3hr8ah8jf afa r raf afafaf83caehfaofhaufhafaafafaasga afafafafafafafafaf100cacqafafafafafafamioj89 af a  af af f af af aa  a af a fasf 3hr8ah8jf afa r raf afafaf83caehfaofhaufhafaafafaasga afafafafafafafafaf100"
+                android:textColor="#C6C4C4"
+                android:textSize="15dp"
+                app:colorClickableText="@color/white"
+                app:trimCollapsedText="Show less"
+                app:trimExpandedText="Read more"
+                app:trimLength="200"
+                app:trimMode="trimModeLength" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/like_image_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/likebtn" />
+
+            <TextView
+                android:id="@+id/like_count_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="1343"
+                android:textColor="@color/grey"
+
+                />
+
+
+            <ImageView
+                android:id="@+id/comment_image_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/commentbtnicon" />
+
+            <TextView
+                android:id="@+id/comment_count_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="102"
+                android:textColor="@color/grey" />
+
+            <ImageView
+                android:id="@+id/price_see_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:clickable="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/priceiconbtn" />
+
+            <ImageView
+                android:id="@+id/post_option_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/threedotbtnwhite" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/greyline"
+            android:alpha="10"
+            android:tintMode="add"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

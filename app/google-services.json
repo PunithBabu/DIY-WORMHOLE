@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1067232971836",
+    "project_id": "diy-wormhole-ee419",
+    "storage_bucket": "diy-wormhole-ee419.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067232971836:android:d139847cfc7f759c920739",
+        "android_client_info": {
+          "package_name": "com.babuminiproject.diywormhole"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067232971836-401hokav97ottn8k3lgv6uvi2lur4jbj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPcwjyfAPll1icxWpLDqfmcpDXGJWCPqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067232971836-401hokav97ottn8k3lgv6uvi2lur4jbj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

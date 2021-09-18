@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".PostActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/update_page_post_toolbar"
+        />
+
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+
+
+
+
+            <ImageView
+                android:id="@+id/new_post_image"
+                android:layout_width="match_parent"
+                android:layout_height="454dp"
+                app:srcCompat="@drawable/postaddimagebg" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Title :"
+                android:textColor="#c7c7c7"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/post_title_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:paddingTop="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:backgroundTint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description / Explanation:"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:textColor="#c7c7c7"/>
+
+            <EditText
+                android:id="@+id/description_edittext_multiline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="20dp"/>
+
+            <Switch
+                android:id="@+id/price_switch"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Price "
+                android:layout_marginTop="20dp"
+                android:textColor="#c7c7c7"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/purple_500"/>
+
+            <EditText
+                android:id="@+id/idea_price_editext"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_marginLeft="10dp"
+                android:hint="Idea /Schema price in rupees"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/purple_500"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/product_price_edittext"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Product price"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:ems="10"
+                android:inputType="number"
+                android:backgroundTint="@color/purple_500"/>
+
+
+            <Button
+                android:id="@+id/post_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:background="@color/purple_500"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:text="Post"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greybox"
+    tools:context=".settings">
+
+
+    <include
+        android:id="@+id/settings_toolbar"
+        layout="@layout/app_bar_layout">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="724dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/settings_profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/profileicon" />
+
+
+            <LinearLayout
+                android:id="@+id/usethilayouttt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/settings_profile_image"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/login_bg"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/settings_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/grey"
+                    android:hint="about me"
+                    android:maxLength="250"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/settings_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/grey"
+                    android:hint="username"
+                    android:maxLength="25"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/settings_profilename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/grey"
+                    android:hint="profile name"
+                    android:maxLength="25"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey" />
+
+
+                <EditText
+                    android:id="@+id/settings_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/grey"
+                    android:focusableInTouchMode="false"
+                    android:hint="Date Of Birth"
+                    android:inputType="date"
+                    android:maxLength="25"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey" />
+
+                <RadioGroup
+                    android:id="@+id/genderradio_grp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/gender_maleradio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="male"
+                        android:textColor="@color/grey" />
+
+                    <RadioButton
+                        android:id="@+id/gender_femaleradio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="female"
+                        android:textColor="@color/grey" />
+
+                    <RadioButton
+                        android:id="@+id/gender_othersradio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="others"
+                        android:textColor="@color/grey" />
+
+
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="Country"
+                        android:textColor="@color/grey"
+                        android:textSize="16dp" />
+
+                    <Spinner
+                        android:id="@+id/setting_spinner_country_list"
+                        android:layout_width="182dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:alpha="0.8"
+                        android:background="@drawable/drop_design_btn" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usethilayouttt"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/settings_update_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btnshape"
+                    android:text="UPDATE"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

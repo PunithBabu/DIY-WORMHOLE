@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home_navbottomid"
+        android:icon="@drawable/homebulbonicon"
+        android:enabled="true"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/serach_navbottomid"
+        android:icon="@drawable/searchonicon"
+        android:enabled="true"
+
+        android:title="Search"
+        />
+
+    <item
+        android:id="@+id/add_posting_navbottomid"
+        android:icon="@drawable/addpostingicon"
+        android:enabled="true"
+
+        android:title="ADD POST"
+        />
+
+    <item
+        android:id="@+id/chat_navbottomid"
+        android:icon="@drawable/messageonicon"
+        android:enabled="true"
+
+        android:title="Chats"
+        />
+    <item
+        android:id="@+id/self_profile_navbottomid"
+        android:icon="@drawable/profileonicon"
+        android:title="My Profile"
+        android:enabled="true"
+
+        />
+
+
+
+
+</menu>

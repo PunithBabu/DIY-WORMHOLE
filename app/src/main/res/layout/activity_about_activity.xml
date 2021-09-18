@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".About_activity">
+
+
+        <include
+            layout="@layout/app_bar_layout"
+            android:id="@+id/about_main_page_toolbar"
+            >
+        </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="
+Blog →
+Read up on product innovations and updates, company announcements, community spotlights, and more.
+\n\nBrand assets →
+
+   Looking for the right way to display the DIY wormhole logo for your latest project? Download the assets and see how and where to use them.
+
+   \n\n
+Community stories →
+
+Developers are building the future on DIY Wormhole every day, explore their stories, celebrate their accomplishments, and find inspiration for your own work.
+\n\nCustomer stories →
+
+See how some of the most influential businesses around the world use DIY Wormhole to provide the best services, products, and experiences for their customers.
+\n\nCareers →
+
+Help us build the home for all developers. We’re a passionate group of people dedicated to software development and collaboration. Come join us!
+\n\nDiversity, Inclusions  Belonging →
+
+We are dedicated to building a community and team that reflects the world we live in and pushes the boundaries of software innovation. Learn more about our DI and B efforts.
+" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
